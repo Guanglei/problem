@@ -1,3 +1,6 @@
+/*find all the combos from 1 to n of *
+ *which sum equanls to m             */
+
 #include <set>
 #include <iostream>
 #include <string>

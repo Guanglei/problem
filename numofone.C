@@ -1,5 +1,6 @@
 #include <iostream>
-#include <stdint.h>
+
+#include "util.h"
 
 int map[16] = {
 	0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4};
@@ -42,21 +43,6 @@ int howManyOnes(uint32_t i)
 	}
 	
 	return ret;
-}
-
-void printIntByBin(uint32_t i, std::ostream& out)
-{
-	for(int j=31; j>=0; --j)
-	{
-		if(i & (1<<j))
-		{
-			out << 1;
-		}
-		else
-		{
-			out << 0;
-		}
-	}
 }
 
 int main()
